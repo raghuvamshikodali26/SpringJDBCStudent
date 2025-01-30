@@ -14,7 +14,7 @@ public class SpringJdbcStudentApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SpringJdbcStudentApplication.class, args);
 		Student s = context.getBean(Student.class);
-		s.setRollNo(1015);
+		s.setRollNo(1016);
 		s.setName("Raghu");
 		s.setMarks(85);
 
@@ -24,6 +24,7 @@ public class SpringJdbcStudentApplication {
 		List<Student> students = service.findAll();
 		System.out.println(students);
 
+		System.out.println("Pushed and updated to git");
 		System.out.println("Pushed and updated to git");
 	}
 
